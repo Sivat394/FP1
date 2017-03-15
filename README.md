@@ -55,8 +55,18 @@ Code is super easy in markdown, which you can easily do inline `(require net/url
 (display-pure-port myport)
 ```
 
-## My Library: (library name here)
-My name: **put your real name here**
+## My Library: Webserver/Spin
+My name: Victor Borcherds
+
+Using the web server and a RESTful api abstraction layer for the server as my libraries I created a way to accept post requests and then repond based on if a json object was sent it or not. To actually send the requests I used a chrome extension called postman. 
+
+Thanks to the spin abstraction layer starting the webserver to accept a post request was as easy as 
+
+`(post "/"
+  (lambda (req) (post_response req)))
+(run)`
+
+
 
 Write what you did!
 Remember that this report must include:
